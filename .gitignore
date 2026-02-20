@@ -5,5 +5,3 @@ venv/
 transcription/venv/
 __pycache__/
 *.pyc
-
-filtered_videos.json
