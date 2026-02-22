@@ -119,6 +119,7 @@ def filter_by_views(video_ids):
                 filtered.append({
                     "video_id": item["id"],
                     "title": snippet["title"],
+                    "thumbnail_url": snippet["thumbnails"].get("high", {}).get("url"),
                     "channel_id": snippet["channelId"],
                     "channel_name": snippet["channelTitle"],
                     "publish_date": snippet["publishedAt"],
