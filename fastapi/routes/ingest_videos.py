@@ -166,7 +166,7 @@ if __name__ == "__main__":
  # Save results to JSON file
     script_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.dirname(script_dir)
-    file_path = os.path.join(script_dir, "data", "filtered_videos.json")
+    file_path = os.path.join(parent_dir, "data", "filtered_videos.json")
 
     with open(file_path, "w") as f:
         json.dump(all_videos, f, indent=4)

@@ -7,7 +7,7 @@ VIDEO_IDS = ["VmxC8ehX-yk", "2jHLPPy_9wY"]
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(script_dir)
-file_path = os.path.join(script_dir, "data", "transcripts.json")
+file_path = os.path.join(parent_dir, "data", "transcripts.json")
 
 def get_multi_transcripts(video_ids, output_file = file_path):
     ytt_api = YouTubeTranscriptApi()

@@ -3,7 +3,7 @@ import json
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
 
-from fastAPI import APIRouter
+from fastapi import APIRouter
 
 load_dotenv()
 
@@ -11,7 +11,7 @@ VIDEO_IDS = ["VmxC8ehX-yk", "2jHLPPy_9wY"]
 DEVELOPER_KEY = os.getenv("GOOGLE_API_KEY")
 script_dir = os.path.dirname(os.path.abspath(__file__))
 parent_dir = os.path.dirname(script_dir)
-file_path = os.path.join(script_dir, "data", "youtubeComments.json")
+file_path = os.path.join(parent_dir, "data", "youtubeComments.json")
 
 # extracts 100 most relevant top level comments from given video
 def get_comments(video_Ids, output_file = file_path):
